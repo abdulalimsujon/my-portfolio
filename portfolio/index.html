@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/04b99d50e2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -28,8 +29,8 @@
         </nav>
 
         <div class="header-text">
-          <p>Full Stack web Developer</p>
           <h1>Hi, I am <span>Abdul Alim</span></h1>
+          <h4>And i am a <span id="text"></span></h4>
         </div>
       </div>
     </div>
@@ -220,8 +221,7 @@
                 </div>
                 <div class="Fronted-git">
                   <span>
-                    <a
-                      href="https://github.com/abdulalimsujon/heritage_commerce_fronteded"
+                    <a href="https://heritage-commerce-fronteded.vercel.app/"
                       ><i class="fa-brands fa-github"></i>live</a
                     >
                   </span>
@@ -327,6 +327,14 @@
       // Add 'active-tab' to the corresponding tab content
       document.getElementById(tabname).classList.add("active-tab");
     }
+
+    var typed = new Typed("#text", {
+      strings: ["Fronted-developer", "Backend-developer"],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+    });
   </script>
 
   <script>

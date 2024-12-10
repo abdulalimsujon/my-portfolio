@@ -174,10 +174,17 @@ nav ul li a:hover::after {
 }
 .work-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* Default 2 columns */
   grid-gap: 40px;
   margin-top: 50px;
 }
+
+@media (max-width: 600px) {
+  .work-list {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+}
+
 .work {
   border-radius: 10px;
   position: relative;
@@ -334,7 +341,7 @@ nav .fas {
   }
 
   #header {
-    background-image: url(images/bg.png);
+    background-image: url(images/Capture.PNG);
   }
 
   .header-text {
